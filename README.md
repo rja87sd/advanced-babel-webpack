@@ -84,3 +84,6 @@ Describe how to build and test the project, including how to verify dynamic impo
 - Right click anywhere on the page and click "inspect element".
 - Click on the "Console tab" and observe any errors or lack thereof.
 - Click on the Network tab and observe activity.
+
+**Credits**
+- Credit to ChatGPT for assistance with debugging and explanation of Babel.js and Webpack, and also code comments.

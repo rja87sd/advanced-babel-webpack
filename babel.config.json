@@ -1,8 +1,17 @@
+// Credit to ChatGPT for assistance and code comments.
 {
-  "presets": [["@babel/preset-env", { "modules": false }]],
+  // Configure Babel presets
+  "presets": [
+    // Use the @babel/preset-env preset with the "modules" option set to false
+    ["@babel/preset-env", { "modules": false }]
+  ],
+  // Configure Babel plugins
   "plugins": [
+    // Use the @babel/plugin-transform-runtime plugin
     "@babel/plugin-transform-runtime",
+    // Use the @babel/plugin-transform-class-properties plugin
     "@babel/plugin-transform-class-properties",
+    // Use the @babel/plugin-syntax-dynamic-import plugin
     "@babel/plugin-syntax-dynamic-import"
   ]
 }
