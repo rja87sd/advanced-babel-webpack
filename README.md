@@ -69,5 +69,18 @@ Observe the network activity to confirm code splitting is working as expected.
 **Update README.md:**
 
 Document the steps for setting up the project, including installing dependencies and configuring Webpack and Babel.
-
+- run "npm init -y"
+- run "npm install webpack webpack-cli --save-dev"
+- run "npm install @babel/core @babel/preset-env @babel/preset-react babel-loader @babel/plugin-transform-runtime @babel/plugin-transform-class-properties @babel/plugin-syntax-dynamic-import --save-dev"
+- In the project root directory, create "webpack.config.js" and configure with the following code:
+  ![image](https://github.com/rja87sd/advanced-babel-webpack/assets/145504216/ca056a38-1d7e-431b-8e86-95cfd4af3034)  
+- create "babel.config.json" and configure witht he following code:
+  ![image](https://github.com/rja87sd/advanced-babel-webpack/assets/145504216/1c21133b-231a-4db3-a896-5a29fa693991)
+- create "index.js", "greet.js", "module2.js", and "module3.js" in /src and add some basic code to provide functionality for testing and observation.
+- create "index.html" in project root and add boilerplate code and a button, ensuring that the bundle.js is linked.
+- run "npx webpack"
 Describe how to build and test the project, including how to verify dynamic imports and tree shaking.
+- Use VS Code Live Server, or run "npm run dev" to bring up the page.
+- Right click anywhere on the page and click "inspect element".
+- Click on the "Console tab" and observe any errors or lack thereof.
+- Click on the Network tab and observe activity.
